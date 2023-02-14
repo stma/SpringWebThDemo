@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Új product</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+    form > input {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .container {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>új termék form</h1>
+  <div class="container">
+    <form action="/new-product" method="post">
+
+      <label for="pname">Termek neve:</label>
+      <input id="pname" name="name" type="text">
+
+      <label for="pprice">Termek ara:</label>
+      <input id="pprice" name="price" type="text">
+
+      <input type="submit" value="Ment">
+    </form>
+  </div>
+</body>
+</html>
